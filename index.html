@@ -1,0 +1,497 @@
+﻿<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ace Tennis Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="header-left">
+          <img src="assets/img/лого.svg" alt=""/>
+          
+          <nav class="header-nav">
+            <a href="about.html">О нас</a>
+            <div class="header-schedule-wrap">
+              <button
+                class="header-schedule"
+                type="button"
+                data-header-schedule
+              >
+                Расписание и цены
+              </button>
+              <div
+                class="header-schedule-panel"
+                data-header-schedule-panel
+                aria-hidden="true"
+              >
+                <a href="schedule-pushkinskaya.html">Пушкинская</a>
+                <a href="schedule-timiryazevskaya.html">Тимирязевская</a>
+                <a href="schedule-kosino.html">Косино</a>
+                <a href="schedule-lukhmanovskaya.html">Лухмановская</a>
+              </div>
+            </div>
+            <a href="trainers.html">Тренеры</a>
+          </nav>
+        </div>
+        <div class="header-right">
+          <div class="header-phone">+7 (987) 999 99 99</div>
+          <button
+            class="burger"
+            type="button"
+            aria-label="Открыть меню"
+            data-menu-open
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <div class="menu-overlay" data-menu-overlay aria-hidden="true">
+        <div class="menu-panel" role="dialog" aria-modal="true">
+          <button class="menu-close" type="button" aria-label="Закрыть меню" data-menu-close></button>
+          <nav class="menu-links">
+  <a href="index.html">Главная</a>
+  <a href="about.html">О нас</a>
+  
+  <!-- Обёртка для кнопки + выпадашки -->
+  <div class="menu-schedule-wrap">
+    <button class="menu-link" type="button" data-menu-schedule>
+      Расписание и цены
+    </button>
+    <div class="menu-schedule" data-menu-schedule-panel aria-hidden="true">
+      <a href="schedule-pushkinskaya.html">Пушкинская</a>
+      <a href="schedule-timiryazevskaya.html">Тимирязевская</a>
+      <a href="schedule-kosino.html">Косино</a>
+      <a href="schedule-lukhmanovskaya.html">Лухмановская</a>
+    </div>
+  </div>
+  
+  <a href="trainers.html">Тренеры</a>
+  <a href="reviews.html">Отзывы</a>
+  <a href="certificates.html">Сертификаты</a>
+</nav>
+          <div class="menu-contacts">
+            <div class="menu-phone">+7 (987) 999 99 99</div>
+            <div class="menu-icons">
+              <img src="assets/img/menu-icons.svg" alt="" />
+            </div>
+          </div>
+          <button class="btn menu-cta" type="button" data-request-open>
+            Оставить заявку
+          </button>
+        </div>
+      </div>
+
+      <main class="main" id="top">
+        <section class="hero">
+          <div class="hero-inner">
+            <div class="hero-media">
+              <picture>
+                <source media="(max-width: 768px)" srcset="assets/img/hero-player-mobile.png">
+                <img
+                  src="assets/img/hero-player.png"
+                  alt="Тренер бросает мяч"
+                />
+              </picture>
+              
+            </div>
+            <div class="hero-copy">
+              <h1 class="hero-title">Ace Tennis Academy</h1>
+              <div class="hero-sub">
+                <p>Твой путь к большим победам начинается здесь</p>
+                <button class="btn" type="button" data-request-open>
+                  Оставить заявку
+                </button>
+              </div>
+            </div>
+          </div>
+            <div class="hero-sub hero-sub--mobile">
+              <p>ТВОЙ ПУТЬ К БОЛЬШИМ ПОБЕДАМ НАЧИНАЕТСЯ ЗДЕСЬ</p>
+              <button class="btn" type="button" data-request-open>
+                Оставить заявку
+              </button>
+            </div>
+        </section>
+
+        <section class="facts">
+          <div class="fact">
+            <div class="fact-number">&gt;500</div>
+            <div class="fact-text">учеников прошло обучение</div>
+          </div>
+          <div class="fact">
+            <div class="fact-number">6</div>
+            <div class="fact-text">профессиональных кортов</div>
+          </div>
+          <div class="fact">
+            <div class="fact-number">7</div>
+            <div class="fact-text">дней в неделю мы работаем для вас</div>
+          </div>
+          <div class="fact fact-highlight">
+            <div class="fact-number">10+</div>
+            <div class="fact-text">турниров проведено</div>
+          </div>
+        </section>
+
+        <section class="about" id="about">
+          <h2>О компании ( Кто мы )</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                «Ace Tennis Academy — это сообщество тренеров и любителей тенниса,
+                объединенных одной страстью к этому виду спорта. Мы находимся в
+                Москве и открыли свои двери в 2022 году
+              </p>
+              <div class="about-images">
+                <div class="mask-image mask-small">
+                  <img
+                    src="assets/img/about-1.jpg"
+                    alt="Тренировка на корте"
+                  />
+                </div>
+                <div class="mask-image mask-small">
+                  <img
+                    src="assets/img/about-2.jpg"
+                    alt="Тренер и ученик"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="mask-image mask-large">
+              <img
+                src="assets/img/about-3.png"
+                alt="Игровой момент"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="belief">
+          <img
+            class="belief-bg"
+            src="assets/img/belief-bg.png"
+            alt=""
+          />
+          <div class="belief-text">
+            Мы верим, что теннис доступен каждому, кто готов взять ракетку в руки
+          </div>
+        </section>
+
+        <section class="locations" id="schedule">
+          <h2>Наши локации</h2>
+          <div class="locations-grid">
+            <div class="locations-col">
+              <a href="schedule-pushkinskaya.html">
+                <span>Пушкинская</span>
+                <img
+                  src="assets/img/location-arrow.svg"
+                  alt=""
+                />
+              </a>
+              <a href="schedule-lukhmanovskaya.html">
+                <span>Лухмановская</span>
+                <img
+                  src="assets/img/location-arrow.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="locations-col">
+              <a href="schedule-kosino.html">
+                <span>Косино</span>
+                <img
+                  src="assets/img/location-arrow.svg"
+                  alt=""
+                />
+              </a>
+              <a href="schedule-timiryazevskaya.html">
+                <span>Тимирязевская</span>
+                <img
+                  src="assets/img/location-arrow.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        
+
+        <section class="gallery">
+          <div class="gallery-track">
+            <img
+              src="assets/img/gallery-1.jpg"
+              alt=""
+            />
+            <img
+              src="assets/img/gallery-2.jpg"
+              alt=""
+            />
+            <img
+              src="assets/img/gallery-3.jpg"
+              alt=""
+            />
+            <img
+              src="assets/img/gallery-4.jpg"
+              alt=""
+            />
+            <img
+              src="assets/img/gallery-5.jpg"
+              alt=""
+            />
+            <img
+              src="assets/img/gallery-6.jpg"
+              alt=""
+            />
+          </div>
+        </section>
+
+        <section class="cta">
+  <div class="cta-content">
+
+    <div class="cta-text">
+      <h2>Выходите на корт</h2>
+
+      <p>
+        Первый шаг к большой игре — это просто.
+        Заполните форму, и мы свяжемся с вами.
+      </p>
+    </div>
+
+    <form class="cta-form">
+
+      <label>
+        <span>Имя</span>
+
+        <input
+          type="text"
+          class="name-input"
+          placeholder=""
+	  required
+  	  minlength="2"
+  	  maxlength="40"
+  	  pattern="[A-Za-zА-Яа-яЁё\s\-]+"
+  	  title="Только буквы"
+        />
+      </label>
+
+      <label>
+        <span>Номер телефона</span>
+        <input
+          type="tel"
+          class="phone-input"
+          placeholder="8 (___) ___-__-__"
+          required
+          minlength="11"
+          maxlength="12"
+          pattern="^(\+7|8)\d{10}$"
+          inputmode="tel"
+          title="Введите номер в формате +7XXXXXXXXXX или 8XXXXXXXXXX "
+        />
+      </label>
+
+      <button class="btn" type="submit">
+        Оставить заявку
+      </button>
+
+    </form>
+
+  </div>
+  <div class="cta-logo"></div>
+</section>
+
+        <section class="faq">
+          <h2>Частые вопросы</h2>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button type="button">
+                <span>С какого возраста можно начать заниматься теннисом в вашей школе?</span>
+                <img
+                  src="assets/img/faq-plus.svg"
+                  alt=""
+                />
+              </button>
+              <p class="faq-answer">
+                Принимаем учеников с 4 лет, есть группы для детей и взрослых. Программу
+                подбираем по возрасту и уровню подготовки.
+              </p>
+              <div class="faq-line"></div>
+            </div>
+            <div class="faq-item">
+              <button type="button">
+                <span>Что нужно для первого занятия? Нужно ли покупать ракетку сразу?</span>
+                <img
+                  src="assets/img/faq-plus.svg"
+                  alt=""
+                />
+              </button>
+              <p class="faq-answer">
+                На первое занятие достаточно удобной формы и кроссовок. Ракетку и мячи
+                предоставим на месте.
+              </p>
+              <div class="faq-line"></div>
+            </div>
+            <div class="faq-item">
+              <button type="button">
+                <span>Сколько стоят занятия? Есть ли абонементы и скидки?</span>
+                <img
+                  src="assets/img/faq-plus.svg"
+                  alt=""
+                />
+              </button>
+              <p class="faq-answer">
+                Стоимость зависит от формата и длительности занятий. Есть абонементы и
+                семейные скидки — подскажем лучший вариант.
+              </p>
+              <div class="faq-line"></div>
+            </div>
+            <div class="faq-item">
+              <button type="button">
+                <span>Участвуете ли вы в соревнованиях?</span>
+                <img
+                  src="assets/img/faq-plus.svg"
+                  alt=""
+                />
+              </button>
+              <p class="faq-answer">
+                Да, мы участвуем в различных соревнованиях и турнирах. Ребята получают опыт и радость от участия в спортивных мероприятиях.
+              </p>
+              <div class="faq-line"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+          <h2>Как нас найти</h2>
+          <div class="contacts-inner">
+            <div class="contacts-list">
+              <div class="contact-item">
+                <div class="contact-title">м. Пушкинская</div>
+                <div class="contact-right">
+                <div class="contact-text">ул. Тверская, д. 18, корп. 2</div>
+                <div class="contact-text">+7(987) 344 55 66</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-title">м. Косино</div>
+                <div class="contact-right">
+                <div class="contact-text">ул. Большая Косинская, д. 15</div>
+                <div class="contact-text">+7(987) 344 55 66</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-title">м. Тимирязевская</div>
+                <div class="contact-right">
+                <div class="contact-text">Дмитровское шоссе, д. 29А</div>
+                <div class="contact-text">+7(987) 344 55 66</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-title">м. Лухмановская</div>
+                <div class="contact-right">
+                <div class="contact-text">л. Лухмановская, д. 12</div>
+                <div class="contact-text">+7(987) 234 44 56</div>
+                </div>
+              </div>
+            </div>
+            <div class="contacts-map">
+              <img
+                src="assets/img/map.jpg"
+                alt="Карта"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div class="request-modal" data-request-form-modal aria-hidden="true">
+        <div
+          class="request-modal__window request-modal__window--form"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="request-form-title"
+        >
+          <button
+            class="request-modal__close"
+            type="button"
+            aria-label="Закрыть"
+            data-request-form-close
+          ></button>
+          <div class="request-modal__content">
+            <div class="request-modal__header">
+              <h2 id="request-form-title">Ace Tennis Academy</h2>
+              <p>Оставьте заявку и мы свяжемся с вами</p>
+            </div>
+            <form class="request-form" data-request-form>
+              <input type="text" class="name-input" name="name" placeholder="Имя" required minlength="2" maxlength="40" pattern="[A-Za-zА-Яа-яЁё\s\-]+" title="Только буквы"/>
+              <input
+                type="tel"
+                class="phone-input"
+                placeholder="8 (___) ___-__-__"
+                required
+                minlength="11"
+                maxlength="12"
+                pattern="^(\+7|8)\d{10}$"
+                inputmode="tel"
+                title="Введите номер в формате +7XXXXXXXXXX или 8XXXXXXXXXX "
+              />              
+        <button class="btn request-submit" type="submit">
+                Оставить заявку
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="request-modal" data-request-success aria-hidden="true">
+        <div
+          class="request-modal__window request-modal__window--success"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="request-success-title"
+        >
+          <button
+            class="request-modal__close"
+            type="button"
+            aria-label="Закрыть"
+            data-request-success-close
+          ></button>
+          <h2 id="request-success-title">Заявка отправлена</h2>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <div class="footer-left">
+          <div class="footer-icons">
+            <img src="assets/img/footer-logo.svg" alt="Контакты" />
+          </div>
+          <nav class="footer-nav">
+            <a href="about.html">О нас</a>
+            <a href="schedule-pushkinskaya.html">Пушкинская</a>
+            <a href="schedule-timiryazevskaya.html">Тимирязевская</a>
+            <a href="schedule-lukhmanovskaya.html">Лухмановская</a>
+            <a href="schedule-kosino.html">Косино</a>
+            <a href="trainers.html">Тренеры</a>
+          </nav>
+        </div>
+        <div class="footer-right">
+          <div>Блог</div>
+          <div>Договор-оферта</div>
+          <div>Политика конфиденциальности</div>
+        </div>
+      </footer>
+    </div>
+    <script src="menu.js"></script>
+    <script src="request.js"></script>
+  </body>
+</html>

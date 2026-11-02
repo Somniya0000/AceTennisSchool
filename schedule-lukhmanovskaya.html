@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Расписание - Лухмановская</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="schedule.css" />
+	</head>
+	<body data-schedule-location="Лухмановская">
+		<div class="page">
+			<header class="site-header">
+				<div class="header-left">
+					<a class="logo" href="index.html" aria-label="Ace Tennis Academy">
+						<img src="assets/img/лого.svg" alt=""/>
+					</a>
+					<nav class="header-nav">
+						<a href="about.html">О нас</a>
+						<div class="header-schedule-wrap">
+							<button
+								class="header-schedule"
+								type="button"
+								data-header-schedule
+							>
+								Расписание и цены
+							</button>
+							<div
+								class="header-schedule-panel"
+								data-header-schedule-panel
+								aria-hidden="true"
+							>
+								<a href="schedule-pushkinskaya.html">Пушкинская</a>
+								<a href="schedule-timiryazevskaya.html">Тимирязевская</a>
+								<a href="schedule-kosino.html">Косино</a>
+								<a href="schedule-lukhmanovskaya.html">Лухмановская</a>
+							</div>
+						</div>
+						<a href="trainers.html">Тренеры</a>
+					</nav>
+				</div>
+				<div class="header-right">
+					<div class="header-phone">+7 (987) 999 99 99</div>
+					<button
+						class="burger"
+						type="button"
+						aria-label="Открыть меню"
+						data-menu-open
+					>
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</header>
+
+			<div class="menu-overlay" data-menu-overlay aria-hidden="true">
+  <div class="menu-panel" role="dialog" aria-modal="true">
+    <button class="menu-close" type="button" aria-label="Закрыть меню" data-menu-close></button>
+    <nav class="menu-links">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О нас</a>
+      
+      <!-- Обёртка для кнопки + выпадашки -->
+      <div class="menu-schedule-wrap">
+        <button class="menu-link" type="button" data-menu-schedule>
+          Расписание и цены
+        </button>
+        <div class="menu-schedule" data-menu-schedule-panel aria-hidden="true">
+          <a href="schedule-pushkinskaya.html">Пушкинская</a>
+          <a href="schedule-timiryazevskaya.html">Тимирязевская</a>
+          <a href="schedule-kosino.html">Косино</a>
+          <a href="schedule-lukhmanovskaya.html">Лухмановская</a>
+        </div>
+      </div>
+      
+      <a href="trainers.html">Тренеры</a>
+      <a href="reviews.html">Отзывы</a>
+      <a href="certificates.html">Сертификаты</a>
+    </nav>
+    <div class="menu-contacts">
+      <div class="menu-phone">+7 (987) 999 99 99</div>
+      <div class="menu-icons">
+        <img src="assets/img/menu-icons.svg" alt="" />
+      </div>
+    </div>
+    <button class="btn menu-cta" type="button" data-request-open>
+      Оставить заявку
+    </button>
+  </div>
+</div>
+
+			<main class="schedule-main">
+				<img src="assets/img/Group 1321319927 (2).png" alt="" />
+
+				<section class="schedule-controls">
+					<div class="day-tabs">
+						<button class="day-tab is-active" type="button" data-day="pn">
+							ПН
+						</button>
+						<button class="day-tab" type="button" data-day="vt">ВТ</button>
+						<button class="day-tab" type="button" data-day="sr">СР</button>
+						<button class="day-tab" type="button" data-day="cht">ЧТ</button>
+						<button class="day-tab" type="button" data-day="pt">ПТ</button>
+						<button class="day-tab" type="button" data-day="sb">СБ</button>
+						<button class="day-tab" type="button" data-day="vs">ВС</button>
+					</div>
+				</section>
+
+				<section class="schedule-day">
+					<h2 data-schedule-title>Понедельник</h2>
+					<div class="schedule-grid" data-schedule-grid></div>
+				</section>
+
+				<template id="schedule-template-a">
+					<div class="schedule-times">
+						<div>12:00</div>
+						<div>13:00</div>
+						<div>14:00</div>
+						<div>15:00</div>
+						<div>16:00</div>
+						<div>17:00</div>
+						<div>18:00</div>
+						<div>19:00</div>
+						<div>20:00</div>
+					</div>
+					<div class="schedule-slots">
+						<div class="slot-row">
+							<div class="slot-card">
+								<div class="slot-meta">
+									<span class="slot-time">12:00 - 13:00</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-user"></span> Ткаченко Софья
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-group"></span> 6 человек
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-price"></span> 3000р
+									</span>
+								</div>
+								<button class="slot-btn" type="button">Записаться</button>
+							</div>
+							<div class="slot-card">
+								<div class="slot-meta">
+									<span class="slot-time">12:00 - 13:00</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-user"></span> Светлана Ходакова
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-group"></span> 6 человек
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-price"></span> 3000р
+									</span>
+								</div>
+								<button class="slot-btn" type="button">Записаться</button>
+							</div>
+						</div>
+						<div class="slot-row">
+							<div class="slot-block"></div>
+						</div>
+						<div class="slot-row">
+							<div class="slot-card slot-card-wide">
+								<div class="slot-meta">
+									<span class="slot-time">14:00 - 15:00</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-user"></span> Шматкова валерия
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-group"></span> 10 человек
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-price"></span> 4000р
+									</span>
+								</div>
+								<button class="slot-btn" type="button">Записаться</button>
+							</div>
+						</div>
+						<div class="slot-row">
+							<div class="slot-card">
+								<div class="slot-meta">
+									<span class="slot-time">15:00 - 16:00</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-user"></span> Ткаченко Софья
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-group"></span> 6 человек
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-price"></span> 2000р
+									</span>
+								</div>
+								<button class="slot-btn" type="button">Записаться</button>
+							</div>
+							<div class="slot-card">
+								<div class="slot-meta">
+									<span class="slot-time">15:00 - 16:00</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-user"></span> Светлана Ходакова
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-group"></span> 6 человек
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-price"></span> 3000р
+									</span>
+								</div>
+								<button class="slot-btn" type="button">Записаться</button>
+							</div>
+						</div>
+						<div class="slot-row slot-row-tall">
+							<div class="slot-card slot-card-tall">
+								<div class="slot-meta">
+									<span class="slot-time">16:00 - 18:00</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-user"></span> Ткаченко Софья
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-group"></span> 7 человек
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-price"></span> 3000р
+									</span>
+								</div>
+								<button class="slot-btn" type="button">Записаться</button>
+							</div>
+							<div class="slot-card slot-card-tall">
+								<div class="slot-meta">
+									<span class="slot-time">16:00 - 18:00</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-user"></span> Светлана Ходакова
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-group"></span> 6 человек
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-price"></span> 3000р
+									</span>
+								</div>
+								<button class="slot-btn" type="button">Записаться</button>
+							</div>
+						</div>
+						<div class="slot-row">
+							<div class="slot-block"></div>
+						</div>
+						<div class="slot-row">
+							<div class="slot-block"></div>
+						</div>
+						<div class="slot-row">
+							<div class="slot-card">
+								<div class="slot-meta">
+									<span class="slot-time">20:00 - 21:00</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-user"></span> Ткаченко Софья
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-group"></span> 6 человек
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-price"></span> 3000р
+									</span>
+								</div>
+								<button class="slot-btn" type="button">Записаться</button>
+							</div>
+							<div class="slot-card">
+								<div class="slot-meta">
+									<span class="slot-time">20:00 - 21:00</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-user"></span> Светлана Ходакова
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-group"></span> 6 человек
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-price"></span> 3000р
+									</span>
+								</div>
+								<button class="slot-btn" type="button">Записаться</button>
+							</div>
+						</div>
+					</div>
+				</template>
+
+				<template id="schedule-template-b">
+					<div class="schedule-times">
+						<div>12:00</div>
+						<div>13:00</div>
+						<div>14:00</div>
+						<div>15:00</div>
+						<div>16:00</div>
+						<div>17:00</div>
+						<div>18:00</div>
+						<div>19:00</div>
+						<div>20:00</div>
+					</div>
+					<div class="schedule-slots">
+						<div class="slot-row">
+							<div class="slot-card slot-card-wide">
+								<div class="slot-meta">
+									<span class="slot-time">12:00 - 13:00</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-user"></span> Ткаченко Софья
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-group"></span> 8 человек
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-price"></span> 3000р
+									</span>
+								</div>
+								<button class="slot-btn" type="button">Записаться</button>
+							</div>
+						</div>
+						<div class="slot-row">
+							<div class="slot-card slot-card-wide">
+								<div class="slot-meta">
+									<span class="slot-time">13:00 - 14:00</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-user"></span> Ткаченко Софья
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-group"></span> 6 человек
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-price"></span> 5000р
+									</span>
+								</div>
+								<button class="slot-btn" type="button">Записаться</button>
+							</div>
+						</div>
+						<div class="slot-row">
+							<div class="slot-block"></div>
+						</div>
+						<div class="slot-row slot-row-tall">
+							<div class="slot-card slot-card-tall">
+								<div class="slot-meta">
+									<span class="slot-time">15:00 - 17:00</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-user"></span> Светлана Ходакова
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-group"></span> 8 человек
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-price"></span> 3000р
+									</span>
+								</div>
+								<button class="slot-btn" type="button">Записаться</button>
+							</div>
+							<div class="slot-card slot-card-tall">
+								<div class="slot-meta">
+									<span class="slot-time">15:00 - 18:00</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-user"></span> Шматкова Валерия
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-group"></span> 7 человек
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-price"></span> 6000р
+									</span>
+								</div>
+								<button class="slot-btn" type="button">Записаться</button>
+							</div>
+						</div>
+						<div class="slot-row">
+							<div class="slot-block"></div>
+						</div>
+						<div class="slot-row">
+							<div class="slot-card">
+								<div class="slot-meta">
+									<span class="slot-time">18:00 - 19:00</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-user"></span> Ткаченко Софья
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-group"></span> 10 человек
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-price"></span> 2000р
+									</span>
+								</div>
+								<button class="slot-btn" type="button">Записаться</button>
+							</div>
+							<div class="slot-card">
+								<div class="slot-meta">
+									<span class="slot-time">18:00 - 19:00</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-user"></span> Светлана Ходакова
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-group"></span> 10 человек
+									</span>
+									<span class="slot-meta-item">
+										<span class="icon icon-price"></span> 3000р
+									</span>
+								</div>
+								<button class="slot-btn" type="button">Записаться</button>
+							</div>
+						</div>
+						<div class="slot-row">
+							<div class="slot-block"></div>
+						</div>
+						<div class="slot-row">
+							<div class="slot-block"></div>
+						</div>
+					</div>
+				</template>
+			</main>
+
+			<div class="request-modal request-modal--schedule" data-request-form-modal aria-hidden="true">
+				<div
+					class="request-modal__window request-modal__window--schedule"
+					role="dialog"
+					aria-modal="true"
+					aria-labelledby="request-schedule-title"
+				>
+					<button
+						class="request-modal__close"
+						type="button"
+						aria-label="Закрыть"
+						data-request-form-close
+					></button>
+					<div class="request-modal__content request-modal__content--schedule">
+						<h2 id="request-schedule-title">Ace Tennis Academy</h2>
+						<div class="request-schedule">
+							<div class="request-schedule-row">
+								<span class="request-schedule-label">Дата</span>
+								<div class="request-schedule-value">
+									<span data-schedule-day>Понедельник</span>
+									<span data-schedule-time>12:00 - 13:30</span>
+								</div>
+							</div>
+							<div class="request-schedule-divider"></div>
+							<div class="request-schedule-row">
+								<span class="request-schedule-label">Тренер</span>
+								<div class="request-schedule-value">
+									<span data-schedule-trainer>Светлана Ходакова</span>
+								</div>
+							</div>
+							<div class="request-schedule-divider"></div>
+							<div class="request-schedule-row">
+								<span class="request-schedule-label">Локация</span>
+								<div class="request-schedule-value">
+									<span data-schedule-location>Лухмановская</span>
+								</div>
+							</div>
+							<div class="request-schedule-divider"></div>
+						</div>
+						<form class="request-form request-form--schedule" data-request-form>
+							<input type="text" class="name-input" name="name" placeholder="Имя" required minlength="2" maxlength="40" pattern="[A-Za-zА-Яа-яЁё\s\-]+" title="Только буквы"/>
+                <input type="tel" class="phone-input" placeholder="8 (___) ___-__-__" required minlength="11" maxlength="12" pattern="^(\+7|8)\d{10}$" inputmode="tel" title="Введите номер в формате +7XXXXXXXXXX или 8XXXXXXXXXX " />
+							<label class="request-consent">
+								<input required type="checkbox" name="consent" />
+								<span>Согласие на обработку персональных данных</span>
+							</label>
+							<button class="btn request-submit request-submit--schedule" type="submit">
+								Записаться
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="request-modal" data-request-success aria-hidden="true">
+				<div
+					class="request-modal__window request-modal__window--success"
+					role="dialog"
+					aria-modal="true"
+					aria-labelledby="request-success-title"
+				>
+					<button
+						class="request-modal__close"
+						type="button"
+						aria-label="Закрыть"
+						data-request-success-close
+					></button>
+					<h2 id="request-success-title">Заявка отправлена</h2>
+				</div>
+			</div>
+
+			<footer class="site-footer">
+				<div class="footer-left">
+					<div class="footer-icons">
+						<img src="assets/img/footer-logo.svg" alt="Контакты" />
+					</div>
+					<nav class="footer-nav">
+						<a href="about.html">О нас</a>
+						<a href="schedule-pushkinskaya.html">Пушкинская</a>
+						<a href="schedule-timiryazevskaya.html">Тимирязевская</a>
+						<a href="schedule-lukhmanovskaya.html">Лухмановская</a>
+						<a href="schedule-kosino.html">Косино</a>
+						<a href="trainers.html">Тренеры</a>
+					</nav>
+				</div>
+				<div class="footer-right">
+					<div>Блог</div>
+					<div>Договор-оферта</div>
+					<div>Политика конфиденциальности</div>
+				</div>
+			</footer>
+		</div>
+		<script src="menu.js"></script>
+		<script src="request.js"></script>
+		<script src="schedule.js"></script>
+	</body>
+</html>

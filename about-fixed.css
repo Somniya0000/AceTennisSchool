@@ -1,0 +1,673 @@
+.about-main {
+  width: min(1280px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 130px 0 120px;
+  align-items: center;
+}
+
+.about-intro {
+  width: 1140px;
+}
+
+.about-intro p {
+  margin: 0;
+  font-size: 48px;
+  line-height: 55px;
+  letter-spacing: -0.05em;
+  color: var(--dark);
+  text-align: center;
+}
+
+.about-intro .accent {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.about-hero {
+  width: 1140px;
+}
+
+.about-hero-card {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 1140px;
+  height: 720px;
+}
+
+.about-hero-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-hero-card h1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--dark);
+  width: 1100px;
+  font-family: var(--headline-font);
+  font-size: 96px;
+  line-height: 96px;
+  margin: 0;
+}
+
+.about-philosophy {
+  width: 1140px;
+}
+
+.about-heading-right {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  text-align: right;
+  color: var(--dark);
+  margin: 0 0 50px;
+}
+
+.about-quote {
+  background: var(--yellow-soft);
+  border-radius: 30px;
+  padding: 50px 30px;
+  position: relative;
+  width: 1140px;
+  min-height: 359px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.about-quote::before {
+  content: """;
+  position: absolute;
+  left: 30px;
+  top: 32px;
+  font-size: 200px;
+  line-height: 230px;
+  color: var(--dark);
+  font-weight: 700;
+}
+
+.about-quote p {
+  margin: 0;
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: -0.05em;
+  color: var(--dark);
+  padding-left: 80px;
+  max-width: 999px;
+}
+
+.about-founder {
+  width: 1280px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 0 70px;
+}
+
+.founder-label {
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: -0.05em;
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+
+.founder-name {
+  font-family: var(--headline-font);
+  font-size: 90px;
+  line-height: 90px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.founder-text p {
+  margin: 0;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: -0.05em;
+  color: var(--dark);
+  width: 540px;
+  text-align: justify;
+}
+
+.founder-photo img {
+  width: 493px;
+  height: 545px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.about-values {
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 0 70px;
+}
+
+.values-clouds {
+  position: relative;
+  width: 1079px;
+  height: 493px;
+}
+
+.value-item {
+  position: absolute;
+  background: url("assets/img/Union.svg") no-repeat center / contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--dark);
+  font-size: 50px;
+  line-height: 57px;
+  letter-spacing: -0.05em;
+  padding: 0 18px;
+}
+
+.value-1 {
+  width: 465px;
+  height: 196px;
+  left: 100px;
+  top: 93px;
+}
+
+.value-2 {
+  width: 544px;
+  height: 178px;
+  left: 635px;
+  top: 162px;
+}
+
+.value-3 {
+  width: 462px;
+  height: 181px;
+  left: 317px;
+  top: 359px;
+}
+
+.value-4 {
+  width: 315px;
+  height: 176px;
+  left: 849px;
+  top: 410px;
+}
+
+/* ПЛАНШЕТ (1024px и меньше) */
+@media (max-width: 1024px) {
+  .about-main {
+    padding: 100px 24px 90px;
+    gap: 80px;
+  }
+
+  .about-hero {
+    width: 100%;
+  }
+
+  .about-hero-card {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+  }
+
+  .about-hero-card h1 {
+    font-size: 64px;
+    line-height: 64px;
+    top: 12px;
+    left: 12px;
+    width: calc(100% - 24px);
+  }
+
+  .about-intro {
+    width: 100%;
+  }
+
+  .about-intro p {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .about-philosophy {
+    width: 100%;
+  }
+
+  .about-heading-right {
+    font-size: 48px;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .about-quote {
+    width: 100%;
+    padding: 40px 24px;
+    min-height: auto;
+    flex-direction: column;
+  }
+
+  .about-quote::before {
+    left: 12px;
+    top: 8px;
+    font-size: 100px;
+    line-height: 100px;
+  }
+
+  .about-quote p {
+    padding-left: 40px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .about-founder {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .founder-label {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .founder-name {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .founder-text p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+  }
+
+  .founder-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+
+  .about-values {
+    width: 100%;
+    padding: 0;
+  }
+
+  .values-clouds {
+    width: 100%;
+    height: auto;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .value-item {
+    position: static;
+    width: 100%;
+    height: auto;
+    background: url("assets/img/Union.svg") no-repeat left center / 48px 48px;
+    padding: 12px 12px 12px 68px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .value-1, .value-2, .value-3, .value-4 {
+    width: auto;
+    height: auto;
+    left: auto;
+    top: auto;
+  }
+}
+
+/* МОБИЛЬНЫЙ (768px и меньше) */
+@media (max-width: 768px) {
+  .about-main {
+    padding: 60px 16px 60px;
+    gap: 50px;
+  }
+
+  .about-hero {
+    width: 100%;
+  }
+
+  .about-hero-card {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+
+  .about-hero-card img {
+    border-radius: 16px;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .about-hero-card h1 {
+    position: static;
+    margin: 16px 0 0 0;
+    padding: 0;
+    font-size: 32px;
+    line-height: 36px;
+    color: var(--dark);
+    text-align: left;
+    width: 100%;
+  }
+
+  .about-intro {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about-intro p {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .about-philosophy {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about-heading-right {
+    font-size: 28px;
+    line-height: 32px;
+    text-align: left;
+    padding: 0 0 16px 0;
+    margin: 0;
+  }
+
+  .about-quote {
+    background: var(--yellow-soft);
+    border-radius: 16px;
+    padding: 24px 16px;
+    width: 100%;
+    min-height: auto;
+    display: block;
+  }
+
+  .about-quote::before {
+    content: """;
+    position: absolute;
+    left: 8px;
+    top: -8px;
+    font-size: 56px;
+    line-height: 56px;
+    color: var(--dark);
+    font-weight: 700;
+  }
+
+  .about-quote p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: var(--dark);
+    padding-left: 24px;
+    max-width: 100%;
+  }
+
+  /* Founder block: stack text and photo */
+  .about-founder {
+    width: 100%;
+    padding: 0;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .founder-text {
+    width: 100%;
+  }
+
+  .founder-label {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+
+  .founder-name {
+    font-family: var(--headline-font);
+    font-size: 28px;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .founder-text p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: var(--dark);
+    width: 100%;
+    text-align: left;
+  }
+
+  .founder-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  /* Values: simple stacked layout on mobile */
+  .about-values {
+    width: 100%;
+    padding: 0;
+    gap: 0;
+  }
+
+  .values-clouds {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transform: none;
+    height: auto;
+    width: 100%;
+  }
+
+  .value-item {
+    position: static;
+    width: 100%;
+    height: auto;
+    background: url("assets/img/Union.svg") no-repeat left center / 40px 40px;
+    padding: 12px 12px 12px 52px;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .value-1, .value-2, .value-3, .value-4 {
+    width: auto;
+    height: auto;
+    left: auto;
+    top: auto;
+  }
+
+  .value-item span {
+    display: inline;
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
+/* МАЛЕНЬКИЙ МОБИЛЬНЫЙ (480px и меньше) */
+@media (max-width: 480px) {
+  .about-main {
+    padding: 40px 12px 40px;
+    gap: 40px;
+  }
+
+  .about-hero-card h1 {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 12px 0 0 0;
+  }
+
+  .about-intro p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .about-heading-right {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .about-quote {
+    padding: 16px 12px;
+    border-radius: 12px;
+  }
+
+  .about-quote::before {
+    font-size: 40px;
+    line-height: 40px;
+    left: 4px;
+    top: -4px;
+  }
+
+  .about-quote p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 16px;
+  }
+
+  .founder-label {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .founder-name {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .founder-text p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .value-item {
+    padding: 10px 10px 10px 48px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .about-main {
+    padding: 80px 20px 70px;
+    gap: 40px;
+  }
+
+  .about-hero {
+    width: 100%;
+  }
+
+  .about-hero-card {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .about-hero-card h1 {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 15px 0 0 0;
+    padding: 0;
+  }
+
+  .about-intro {
+    width: 100%;
+  }
+
+  .about-intro p {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .about-philosophy {
+    width: 100%;
+  }
+
+  .about-heading-right {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .about-quote {
+    background: var(--yellow-soft);
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .about-quote p {
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 20px;
+  }
+
+  .about-founder {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .founder-label {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .founder-name {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .founder-text p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .founder-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .about-values {
+    width: 100%;
+    padding: 0;
+  }
+
+  .value-item {
+    padding: 12px 12px 12px 60px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

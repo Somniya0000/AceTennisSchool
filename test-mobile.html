@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mobile Test - CTA Form Fields</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="about.css">
+  <style>
+    body {
+      max-width: 430px;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .test-info {
+      background: #f0f0f0;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+    .test-info h2 {
+      margin: 0 0 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="test-info">
+    <h2>✓ Mobile CTA Form Test (430px)</h2>
+    <p>Viewport width: 430px (и меньше)</p>
+    <p>Проверьте что поля ввода видны и пригодны для ввода текста</p>
+  </div>
+
+  <section class="cta">
+    <div class="cta-content">
+      <div class="cta-text">
+        <h2>Выходите на корт</h2>
+        <p>Первый шаг к большой игре — это просто. Заполните форму, и мы свяжемся с вами.</p>
+      </div>
+      <form class="cta-form">
+        <label>
+          <span>Имя</span>
+          <input type="text" class="name-input" placeholder="" required minlength="2" maxlength="40" pattern="[A-Za-zА-Яа-яЁё\s\-]+" title="Только буквы" />
+        </label>
+        <label>
+          <span>Номер телефона</span>
+          <input type="tel" class="phone-input" placeholder="" required minlength="10" maxlength="15" pattern="[0-9+]+" inputmode="numeric" />
+        </label>
+        <button class="btn" type="submit">Оставить заявку</button>
+      </form>
+    </div>
+    <div class="cta-logo"></div>
+  </section>
+
+  <div class="test-info">
+    <h2>Что должно быть видно:</h2>
+    <ul>
+      <li>✓ Два поля ввода (Имя и Номер телефона) - видны с границей внизу</li>
+      <li>✓ Поля имеют достаточную высоту для ввода текста</li>
+      <li>✓ Между полями зазор 12px</li>
+      <li>✓ Кнопка "Оставить заявку" полная ширина</li>
+      <li>✓ Нет элемента height: 0px который скрывает поля</li>
+    </ul>
+  </div>
+</body>
+</html>
